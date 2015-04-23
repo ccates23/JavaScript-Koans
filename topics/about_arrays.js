@@ -28,8 +28,8 @@ test("stack methods", function() {
     stack.push("first");
     stack.push("second");
 
-    equal(__, stack.pop(), 'what will be the first value popped off the stack?');
-    equal(__, stack.pop(), 'what will be the second value popped off the stack?');
+    equal("second", stack.pop(), 'what will be the first value popped off the stack?');
+    equal("first", stack.pop(), 'what will be the second value popped off the stack?');
 });
 
 test("queue methods", function() {
@@ -38,6 +38,6 @@ test("queue methods", function() {
     queue.push("second");
     queue.unshift("third");
 
-    equal(__, queue.shift(), 'what will be shifted out first?');
-    equal(__, queue.shift(), 'what will be shifted out second?');
+    equal("third", queue.shift(), 'what will be shifted out first?');
+    equal("first", queue.shift(), 'what will be shifted out second?');
 });
